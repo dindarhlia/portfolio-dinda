@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinda Nur Rahmalia | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Background Grid Pattern -->
+    <div class="bg-grid-pattern"></div>
+
+    <!-- ================= FLOATING PILL NAVBAR ================= -->
+    <header class="fixed-top pt-3 px-3">
+        <nav class="navbar navbar-expand-lg glass-pill-nav mx-auto px-3 py-2">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-extrabold font-mono fs-5" href="#">
+                    <span class="text-gradient">&lt;Port</span>folio&gt;
+                </a>
+                <div class="d-flex align-items-center gap-2 order-lg-3">
+                    <button class="btn btn-theme-toggle rounded-circle" id="themeToggle" title="Ganti Mode Terang/Gelap">
+                        <i class="bi bi-sun-fill" id="themeIcon"></i>
+                    </button>
+                    <a href="#contact" class="btn btn-primary btn-sm rounded-pill px-3 fw-semibold d-none d-sm-inline-block">
+                        Contact
+                    </a>
+                    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-center order-lg-2" id="navbarNav">
+                    <ul class="navbar-nav gap-1 my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link px-3 rounded-pill" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-3 rounded-pill" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-3 rounded-pill" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link px-3 rounded-pill" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link px-3 rounded-pill" href="#experience">Experience</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="min-vh-100 d-flex align-items-center pt-5 position-relative overflow-hidden">
+        <div class="ambient-glow glow-1"></div>
+        <div class="ambient-glow glow-2"></div>
+        
+        <div class="container pt-5 mt-4">
+            <div class="row align-items-center g-5">
+                <!-- Kolom Kiri: Teks -->
+                <div class="col-lg-7" data-aos="fade-up">
+                    <div class="d-inline-flex align-items-center gap-2 pill-badge mb-3">
+                        <span class="status-dot"></span>
+                        <span class="font-mono small fw-medium">S1 Teknik Informatika &mdash; IPK 3.47/4.00</span>
+                    </div>
+                    
+                    <h1 class="display-4 fw-extrabold tracking-tight mb-3">
+                        Halo, Saya <br>
+                        <span class="text-gradient">Dinda Nur Rahmalia</span>
+                    </h1>
+                    
+                    <div class="fs-5 text-secondary mb-4 font-mono d-flex align-items-center flex-wrap">
+                        <span class="me-2">Siap berkontribusi di Bidang IT Entry-Level:</span>
+                        <span class="d-inline-flex align-items-center">
+                            <span id="typing-text" class="text-body fw-bold border-bottom border-2 border-primary pb-1"></span>
+                            <span class="cursor text-primary fw-bold">|</span>
+                        </span>
+                    </div>
+                    
+                    <p class="lead text-secondary mb-4 pe-lg-5" style="line-height: 1.8; font-size: 1.08rem;">
+                        Fresh Graduate S1 Teknik Informatika Universitas Pamulang yang memadukan pengalaman membangun aplikasi web <strong>full-stack</strong> dengan ketajaman merancang arsitektur sistem informasi. Berfokus mengubah proses bisnis manual menjadi solusi digital yang cepat, akurat, dan objektif&mdash;siap memberikan kontribusi nyata pada posisi entry-level di bidang <strong>Web Development</strong>, <strong>System Analysis</strong>, maupun <strong>Application Support</strong>.
+                    </p>
+                    
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="#projects" class="btn btn-primary btn-lg px-4 rounded-pill fw-semibold shadow-primary">
+                            Eksplorasi Proyek <i class="bi bi-arrow-up-right ms-1"></i>
+                        </a>
+                        <a href="assets/docs/cv-dinda-nur-rahmalia.pdf" download class="btn btn-glass btn-lg px-4 rounded-pill fw-semibold">
+                            <i class="bi bi-file-earmark-arrow-down me-1"></i> Unduh CV
+                        </a>
+                    </div>
+                    
+                    <div class="d-flex align-items-center gap-3 pt-2">
+                        <span class="small text-secondary font-mono">Temukan saya:</span>
+                        <a href="https://linkedin.com/in/dinda-nur-rahmalia" target="_blank" class="social-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="mailto:dindanurrahmaliaaz28@gmail.com" class="social-btn" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="https://wa.me/6285179601554" target="_blank" class="social-btn" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <!-- Tautan Instagram Ditambahkan -->
+                        <a href="https://instagram.com/dinrhlia" target="_blank" class="social-btn" title="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://github.com/dindarhlia" target="_blank" class="social-btn" title="GitHub"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Kolom Kanan: Foto (Dengan Outer Line) -->
+                <div class="col-lg-5 text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="hero-photo-wrapper mx-auto">
+                        <div class="photo-aura"></div>
+                        <img src="assets/img/profile.png" 
+                             alt="Dinda Nur Rahmalia" 
+                             class="hero-photo-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT & CERTIFICATIONS ================= -->
+    <section id="about" class="py-5">
+        <div class="container py-4">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-tag font-mono">// 01. PROFIL &amp; KUALIFIKASI</span>
+                <h2 class="display-6 fw-extrabold mt-2">Latar Belakang &amp; Sertifikasi</h2>
+            </div>
+            <div class="row g-4 align-items-stretch">
+                <!-- Bento Kiri: Tentang Saya -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="bento-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-inline-flex align-items-center gap-2 text-primary fw-semibold mb-3">
+                                <i class="bi bi-person-workspace fs-5"></i>
+                                <span>Tentang Saya</span>
+                            </div>
+                            <h3 class="fw-bold mb-3">Membangun Sistem yang Efisien dari Analisis hingga Baris Kode</h3>
+                            <p class="text-secondary" style="line-height: 1.75;">
+                                Lulusan S1 Teknik Informatika Universitas Pamulang (IPK 3.47/4.00) yang antusias mentransformasi alur kerja manual menjadi sistem digital terotomatisasi. Terbiasa membangun aplikasi web full-stack menggunakan <strong>PHP, JavaScript, Bootstrap Framework, dan MySQL</strong>, serta memetakan perancangan sistem melalui diagram <strong>UML (Use Case, Activity, Sequence), ERD, UI/UX Design dan Wireframing</strong>.
+                            </p>
+                            <p class="text-secondary mb-4" style="line-height: 1.75;">
+                                Kompetensi teknis ini diperkuat oleh pengalaman mengelola basis data pelanggan dengan <strong>Microsoft Excel</strong> serta mengoordinasikan operasional acara berskala besar. Teruji memiliki ketelitian tinggi, <em>analytical thinking</em>, dan <em>problem solving</em> yang tanggap untuk beradaptasi cepat pada posisi IT entry-level di bidang <strong>Web Development, System Analysis, Front-end Dev maupun Business Analysis</strong>.
+                            </p>
+                        </div>
+                        <div class="row g-3 pt-3 border-top border-secondary border-opacity-10">
+                            <div class="col-4">
+                                <div class="stat-box p-3 rounded-4 text-center">
+                                    <h3 class="fw-extrabold text-gradient mb-0">3.47</h3>
+                                    <small class="text-secondary d-block mt-1">IPK S1</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-box p-3 rounded-4 text-center">
+                                    <h3 class="fw-extrabold text-gradient mb-0">2+</h3>
+                                    <small class="text-secondary d-block mt-1">Sertifikasi</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-box p-3 rounded-4 text-center">
+                                    <h3 class="fw-extrabold text-gradient mb-0">Siap</h3>
+                                    <small class="text-secondary d-block mt-1">Fulltime / Entry</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bento Kanan: Pendidikan & Sertifikasi -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bento-card p-4 p-md-5 h-100">
+                        <!-- Pendidikan -->
+                        <div class="d-flex align-items-start justify-content-between flex-wrap gap-2 pb-4 mb-4 border-bottom border-secondary border-opacity-10">
+                            <div class="d-flex gap-3">
+                                <div class="icon-badge bg-primary bg-opacity-10 text-primary">
+                                    <i class="bi bi-mortarboard-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <span class="pill-tag-primary mb-1 d-inline-block">Lulus Agt 2026</span>
+                                    <h5 class="fw-bold mb-1">S1 Teknik Informatika</h5>
+                                    <p class="text-secondary mb-0 small">Universitas Pamulang &bull; IPK: <strong>3.47 / 4.00</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sertifikasi -->
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h6 class="fw-bold mb-0"><i class="bi bi-patch-check-fill text-primary me-2"></i>Sertifikasi Kompetensi &amp; Bahasa</h6>
+                        </div>
+                        <div class="d-grid gap-3">
+                            <!-- Sertifikat 1: LSP Pemrograman -->
+                            <div class="cert-card p-3 rounded-4 d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3">
+                                <div class="d-flex align-items-center gap-3">
+                                    <!-- Ekstensi file huruf kecil (sesuai Vercel) -->
+                                    <img src="assets/img/ujikom.png" alt="Sertifikat LSP" class="cert-thumb-static">
+                                    <div>
+                                        <span class="badge-soft-success mb-1 d-inline-block">Berlaku: Jun 2026 &ndash; Jun 2028</span>
+                                        <h6 class="fw-bold mb-0">Uji Kompetensi Skema Pemrograman</h6>
+                                        <small class="text-secondary">LSP Universitas Pamulang</small>
+                                    </div>
+                                </div>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill px-3 flex-shrink-0"
+                                        onclick="openLightbox('assets/docs/lsp.pdf', 'Sertifikasi Uji Kompetensi Skema Pemrograman — LSP Universitas Pamulang')">
+                                    <i class="bi bi-file-earmark-pdf me-1"></i> Lihat Sertifikat
+                                </button>
+                            </div>
+                            <!-- Sertifikat 2: TOEFL -->
+                            <div class="cert-card p-3 rounded-4 d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3">
+                                <div class="d-flex align-items-center gap-3">
+                                    <!-- Ekstensi file huruf kecil (sesuai Vercel) -->
+                                    <img src="assets/img/toefl.png" alt="Sertifikat TOEFL" class="cert-thumb-static">
+                                    <div>
+                                        <span class="badge-soft-info mb-1 d-inline-block">Berlaku: Sep 2025 &ndash; Sep 2027</span>
+                                        <h6 class="fw-bold mb-0">Sertifikasi TOEFL (Skor: 440)</h6>
+                                        <small class="text-secondary">Lembaga Bahasa Unpam (LBU)</small>
+                                    </div>
+                                </div>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill px-3 flex-shrink-0"
+                                        onclick="openLightbox('assets/docs/toefl.pdf', 'Sertifikasi TOEFL (Skor: 440) — Lembaga Bahasa Unpam')">
+                                    <i class="bi bi-file-earmark-pdf me-1"></i> Lihat Sertifikat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- ================= SKILLS SECTION ================= -->
+    <section id="skills" class="py-5">
+        <div class="container py-4">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-tag font-mono">// 02. KEAHLIAN TEKNIS</span>
+                <h2 class="display-6 fw-extrabold mt-2">Teknologi &amp; Perangkat Kerja</h2>
+                
+                <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
+                    <button class="btn btn-filter active" data-filter="all">Semua Keahlian</button>
+                    <button class="btn btn-filter" data-filter="web">Web &amp; Programming</button>
+                    <button class="btn btn-filter" data-filter="analysis">System Analysis &amp; DB</button>
+                    <button class="btn btn-filter" data-filter="tools">Development Tools</button>
+                </div>
+            </div>
+            <div class="row g-3 justify-content-center" id="skillsGrid" data-aos="fade-up">
+                <div class="col-6 col-md-4 col-lg-3 skill-item" data-category="web">
+                    <div class="bento-card p-3 text-center h-100 skill-hover">
+                        <div class="skill-icon-box text-primary mx-auto mb-2"><i class="bi bi-filetype-php"></i></div>
+                        <h6 class="fw-bold mb-1">PHP Native</h6>
+                        <small class="text-secondary">Backend &amp; Logika SPK</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 skill-item" data-category="web">
+                    <div class="bento-card p-3 text-center h-100 skill-hover">
+                        <div class="skill-icon-box text-warning mx-auto mb-2"><i class="bi bi-filetype-js"></i></div>
+                        <h6 class="fw-bold mb-1">JavaScript</h6>
+                        <small class="text-secondary">DOM &amp; Interaktivitas</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 skill-item" data-category="web">
+                    <div class="bento-card p-3 text-center h-100 skill-hover">
+                        <div class="skill-icon-box text-info mx-auto mb-2"><i class="bi bi-bootstrap-fill"></i></div>
+                        <h6 class="fw-bold mb-1">Bootstrap Framework</h6>
+                        <small class="text-secondary">Responsive UI Design</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 skill-item" data-category="web">
+                    <div class="bento-card p-3 text-center h-100 skill-hover">
+                        <div class="skill-icon-box text-danger mx-auto mb-2"><i class="bi bi-code-slash"></i></div>
+                        <h6 class="fw-bold mb-1">HTML5 &amp; CSS3</h6>
+                        <small class="text-secondary">Modern Web Layout</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 skill-item" data-category="analysis">
+                    <div class="bento-card p-3 text-center h-100 skill-hover">
+                        <div class="skill-icon-box text-success mx-auto mb-2"><i class="bi bi-database-check"></i></div>
+                        <h6 class="fw-bold mb-1">MySQL &amp; phpMyAdmin</h6>
+                        <small class="text-secondary">Relational Database</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 skill-item" data-category="analysis">
+                    <div class="bento-card p-3 text-center h-100 skill-hover">
+                        <div class="skill-icon-box text-primary mx-auto mb-2"><i class="bi bi-diagram-3-fill"></i></div>
+                        <h6 class="fw-bold mb-1">UML &amp; ERD</h6>
+                        <small class="text-secondary">Use Case, Activity, Sequence</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 skill-item" data-category="analysis">
+                    <div class="bento-card p-3 text-center h-100 skill-hover">
+                        <div class="skill-icon-box text-info mx-auto mb-2"><i class="bi bi-layout-text-window-reverse"></i></div>
+                        <h6 class="fw-bold mb-1">UI/UX Wireframing</h6>
+                        <small class="text-secondary">Perancangan Antarmuka</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 skill-item" data-category="tools">
+                    <div class="bento-card p-3 text-center h-100 skill-hover">
+                        <div class="skill-icon-box text-danger mx-auto mb-2"><i class="bi bi-git"></i></div>
+                        <h6 class="fw-bold mb-1">Git / GitHub</h6>
+                        <small class="text-secondary">Version Control</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 skill-item" data-category="tools">
+                    <div class="bento-card p-3 text-center h-100 skill-hover">
+                        <div class="skill-icon-box text-primary mx-auto mb-2"><i class="bi bi-terminal-plus"></i></div>
+                        <h6 class="fw-bold mb-1">VS Code &amp; XAMPP</h6>
+                        <small class="text-secondary">Development Environment</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 skill-item" data-category="tools">
+                    <div class="bento-card p-3 text-center h-100 skill-hover">
+                        <div class="skill-icon-box text-warning mx-auto mb-2"><i class="bi bi-kanban"></i></div>
+                        <h6 class="fw-bold mb-1">Miro &amp; Microsoft Office</h6>
+                        <small class="text-secondary">Word, Excel, PPT &amp; Kolaborasi</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PROJECTS SECTION ================= -->
+    <section id="projects" class="py-5">
+        <div class="container py-4">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-tag font-mono">// 03. PORTOFOLIO PROYEK</span>
+                <h2 class="display-6 fw-extrabold mt-2">Proyek</h2>
+                <p class="text-secondary">Geser layar laptop pada masing-masing proyek untuk melihat beberapa tampilan gambar (klik layar untuk memperbesar)</p>
+            </div>
+            <div class="row g-4">
+                <!-- PROYEK 1: SPK MOORA -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="bento-card p-4 h-100 d-flex flex-column">
+                        
+                        <!-- MOCKUP LAPTOP + SLIDER MULTI GAMBAR -->
+                        <div class="laptop-mockup-wrapper mb-4">
+                            <div class="laptop-screen">
+                                <div class="laptop-notch"></div>
+                                <div id="carouselProject1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators mb-1">
+                                        <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <!-- Ekstensi file diseragamkan huruf kecil (.png) -->
+                                            <img src="assets/img/landingpage.png" 
+                                                 class="d-block w-100 laptop-img" alt="Slide 1 SPK"
+                                                 onclick="openLightbox(this.src, 'Dashboard Utama Aplikasi SPK Pemilihan Mobil Bekas')">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/spk.png" 
+                                                 class="d-block w-100 laptop-img" alt="Slide 2 SPK"
+                                                 onclick="openLightbox(this.src, 'Hasil Perhitungan Matriks & Perankingan MOORA')">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/datamobil.png" 
+                                                 class="d-block w-100 laptop-img" alt="Slide 3 SPK"
+                                                 onclick="openLightbox(this.src, 'CRUD Data Mobil')">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/kriteriabobot.png" 
+                                                 class="d-block w-100 laptop-img" alt="Slide 4 SPK"
+                                                 onclick="openLightbox(this.src, 'Fitur Kriteria Pembobotan Statis & Dinamis')">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProject1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="laptop-base"></div>
+                        </div>
+
+                        <!-- Konten Proyek 1 -->
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="pill-tag-primary">Tugas Akhir &bull; Agt 2026</span>
+                            <span class="font-mono small text-secondary"><i class="bi bi-images me-1"></i>4 Gambar</span>
+                        </div>
+                        <h4 class="fw-bold mb-2">Sistem Pendukung Keputusan Pemilihan Mobil Bekas (Sadulur Mobilindo)</h4>
+                        <p class="text-secondary small mb-3" style="line-height: 1.7;">
+                            Aplikasi web <strong>full-stack</strong> yang dirancang dan dibangun untuk mengotomatisasi proses pemilihan <strong>20 alternatif mobil bekas</strong> secara cepat dan objektif. Sistem ini mengimplementasikan algoritma <strong>MOORA</strong> dengan fitur pembobotan statis maupun dinamis pada <strong>7 kriteria penilaian</strong>, sehingga mampu menghasilkan sistem rekomendasi dan peringkat mobil secara akurat sesuai prioritas pengguna.
+                        </p>
+                        
+                        <div class="d-flex flex-wrap gap-2 mb-4 mt-auto">
+                            <span class="tech-tag">PHP Native</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap Framework</span>
+                            <span class="tech-tag">Metode MOORA</span>
+                        </div>
+                        
+                        <div class="d-flex flex-wrap gap-2 pt-3 border-top border-secondary border-opacity-10">
+                            <!-- Tombol Langsung Menuju Web SPK Live -->
+                            <a href="https://spkmobilindo.page.gd" target="_blank" class="btn btn-primary btn-sm rounded-pill px-4 fw-semibold shadow-primary">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> Kunjungi Web SPK
+                            </a>
+                            <a href="https://github.com/dindarhlia/spkmobilindo" target="_blank" class="btn btn-glass btn-sm rounded-pill px-3">
+                                <i class="bi bi-github me-1"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYEK 2: PAUD AL-HIKMAH -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bento-card p-4 h-100 d-flex flex-column">
+                        
+                        <!-- MOCKUP LAPTOP + SLIDER MULTI GAMBAR -->
+                        <div class="laptop-mockup-wrapper mb-4">
+                            <div class="laptop-screen">
+                                <div class="laptop-notch"></div>
+                                <div id="carouselProject2" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators mb-1">
+                                        <button type="button" data-bs-target="#carouselProject2" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#carouselProject2" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#carouselProject2" data-bs-slide-to="2"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/img/usecase.jpg" 
+                                                 class="d-block w-100 laptop-img" alt="Slide 1 PAUD"
+                                                 onclick="openLightbox(this.src, 'Pemodelan Use Case Diagram Pendaftaran PAUD Al-Hikmah')">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/erd.jpg" 
+                                                 class="d-block w-100 laptop-img" alt="Slide 2 PAUD"
+                                                 onclick="openLightbox(this.src, 'Perancangan Basis Data (ERD) Sistem Pendaftaran & Pembayaran')">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/activitydiag.png" 
+                                                 class="d-block w-100 laptop-img" alt="Slide 3 PAUD"
+                                                 onclick="openLightbox(this.src, 'Pemodelan Activity Diagram Alur Pendaftaran & Pembayaran')">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProject2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="laptop-base"></div>
+                        </div>
+
+                        <!-- Konten Proyek 2 -->
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="pill-tag-purple">Kerja Praktek &bull; Jun 2025</span>
+                            <span class="font-mono small text-secondary"><i class="bi bi-images me-1"></i>3 Gambar</span>
+                        </div>
+                        <h4 class="fw-bold mb-2">Sistem Informasi Pendaftaran dan Pembayaran Online &mdash; PAUD Al-Hikmah</h4>
+                        <p class="text-secondary small mb-3" style="line-height: 1.7;">
+                            Perancangan arsitektur sistem informasi dan basis data untuk mendigitalisasi alur pendaftaran serta administrasi pembayaran sekolah agar berjalan lebih efisien. Proyek kolaboratif ini memetakan kebutuhan instansi secara akurat ke dalam laporan dokumen perancangan yang komprehensif melalui pemodelan diagram <strong>UML (Use Case, Activity, Sequence)</strong> dan rancangan <strong>ERD</strong>.
+                        </p>
+                        
+                        <div class="d-flex flex-wrap gap-2 mb-4 mt-auto">
+                            <span class="tech-tag">System Analysis</span>
+                            <span class="tech-tag">UML (Use Case, Activity, Sequence)</span>
+                            <span class="tech-tag">ERD</span>
+                        </div>
+                        
+                        <div class="d-flex flex-wrap gap-2 pt-3 border-top border-secondary border-opacity-10">
+                            <button class="btn btn-outline-primary btn-sm rounded-pill px-3 fw-semibold" data-bs-toggle="modal" data-bs-target="#paudModal">
+                                <i class="bi bi-file-earmark-richtext me-1"></i> Lihat Rincian Analisis
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EXPERIENCE SECTION (LAYOUT SPLIT-GRID) ================= -->
+    <section id="experience" class="py-5">
+        <div class="container py-4">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-tag font-mono">// 04. REKAM JEJAK KERJA &amp; EVENT</span>
+                <h2 class="display-6 fw-extrabold mt-2">Pengalaman Kerja</h2>
+                <p class="text-secondary">Dokumentasi kegiatan ditampilkan langsung dan dapat diklik untuk pratinjau penuh</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-11" data-aos="fade-up">
+                    <div class="modern-timeline">
+
+                        <!-- PENGALAMAN 1: Catering Crew - S2 Banquet (3 Foto) -->
+                        <div class="timeline-card bento-card p-4 p-md-5 mb-5">
+                            <div class="timeline-dot"></div>
+                            <div class="row g-4 align-items-center">
+                                <!-- Kolom Kiri: Galeri Foto Responsif -->
+                                <div class="col-lg-5 order-lg-2">
+                                    <div class="exp-gallery-container">
+                                        <div class="exp-photo-grid grid-3">
+                                            <div class="exp-photo-frame" onclick="openLightbox('assets/img/catering1.jpg', 'Operasional Pelayanan Acara Berskala Besar — S2 Banquet')">
+                                                <img src="assets/img/catering1.jpg" alt="Kegiatan S2 Banquet 1" class="img-fluid">
+                                                <div class="exp-photo-hover"><i class="bi bi-arrows-fullscreen"></i></div>
+                                            </div>
+                                            <div class="exp-photo-frame" onclick="openLightbox('assets/img/catering2.jpg', 'Koordinasi Lintas Divisi — S2 Banquet')">
+                                                <img src="assets/img/catering2.jpg" alt="Kegiatan S2 Banquet 2" class="img-fluid">
+                                                <div class="exp-photo-hover"><i class="bi bi-arrows-fullscreen"></i></div>
+                                            </div>
+                                            <div class="exp-photo-frame" onclick="openLightbox('assets/img/catering3.jpg', 'Tim Operasional S2 Banquet')">
+                                                <img src="assets/img/catering3.jpg" alt="Kegiatan S2 Banquet 3" class="img-fluid">
+                                                <div class="exp-photo-hover"><i class="bi bi-arrows-fullscreen"></i></div>
+                                            </div>
+                                        </div>
+                                        <span class="exp-gallery-caption"><i class="bi bi-camera me-1"></i>Dokumentasi S2 Banquet</span>
+                                    </div>
+                                </div>
+                                <!-- Kolom Kanan: Rincian Pengalaman -->
+                                <div class="col-lg-7 order-lg-1">
+                                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-2">
+                                        <div>
+                                            <h5 class="fw-bold mb-0">Catering Crew <span class="text-secondary fw-normal fs-6">(Freelance)</span></h5>
+                                            <span class="text-primary fw-semibold small">S2 Banquet</span>
+                                        </div>
+                                        <span class="pill-tag-primary">Nov 2025 &ndash; Sekarang</span>
+                                    </div>
+                                    <ul class="text-secondary small mb-0 ps-3 mt-3" style="line-height: 1.8;">
+                                        <li>Mencapai efisiensi operasional <em>zero-delay</em> pada acara berskala besar melalui eksekusi alur pelayanan lintas divisi.</li>
+                                        <li>Menjaga kelancaran jadwal acara dengan menerapkan <em>problem solving</em> dan sikap adaptif terhadap kendala lapangan yang mendadak.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PENGALAMAN 2: Event Crew (4 Foto) -->
+                        <div class="timeline-card bento-card p-4 p-md-5 mb-5">
+                            <div class="timeline-dot"></div>
+                            <div class="row g-4 align-items-center">
+                                <!-- Kolom Kiri: Galeri Foto Responsif -->
+                                <div class="col-lg-5 order-lg-2">
+                                    <div class="exp-gallery-container">
+                                        <div class="exp-photo-grid grid-4">
+                                            <div class="exp-photo-frame" onclick="openLightbox('assets/img/rfh.jpg', 'Event Crew — Run For Humanity')">
+                                                <img src="assets/img/rfh.jpg" alt="Run For Humanity" class="img-fluid">
+                                                <div class="exp-photo-hover"><i class="bi bi-arrows-fullscreen"></i></div>
+                                            </div>
+                                            <div class="exp-photo-frame" onclick="openLightbox('assets/img/cbfr.jpg', 'Event Crew — Color and Bubble Fun Run')">
+                                                <img src="assets/img/cbfr.jpg" alt="Color Fun Run" class="img-fluid">
+                                                <div class="exp-photo-hover"><i class="bi bi-arrows-fullscreen"></i></div>
+                                            </div>
+                                            <div class="exp-photo-frame" onclick="openLightbox('assets/img/crewrun.jpg', 'Koordinasi Lapangan Bersama Tim Event')">
+                                                <img src="assets/img/crewrun.jpg" alt="Tim Event" class="img-fluid">
+                                                <div class="exp-photo-hover"><i class="bi bi-arrows-fullscreen"></i></div>
+                                            </div>
+                                            <div class="exp-photo-frame" onclick="openLightbox('assets/img/rfh2.jpg', 'Rute & Distribusi Logistik Event')">
+                                                <img src="assets/img/rfh2.jpg" alt="Kegiatan Event 4" class="img-fluid">
+                                                <div class="exp-photo-hover"><i class="bi bi-arrows-fullscreen"></i></div>
+                                            </div>
+                                        </div>
+                                        <span class="exp-gallery-caption"><i class="bi bi-camera me-1"></i>Dokumentasi Event Crew</span>
+                                    </div>
+                                </div>
+                                <!-- Kolom Kanan: Rincian Pengalaman -->
+                                <div class="col-lg-7 order-lg-1">
+                                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-2">
+                                        <div>
+                                            <h5 class="fw-bold mb-0">Event Crew <span class="text-secondary fw-normal fs-6">(Freelance)</span></h5>
+                                            <span class="text-primary fw-semibold small">Run For Humanity &amp; Color and Bubble Fun Run</span>
+                                        </div>
+                                        <span class="pill-tag-neutral">Nov &ndash; Des 2025</span>
+                                    </div>
+                                    <ul class="text-secondary small mb-0 ps-3 mt-3" style="line-height: 1.8;">
+                                        <li>Berhasil mengamankan rute dan distribusi logistik bagi <strong>6.000+ peserta</strong> tanpa <em>bottleneck</em> dari garis <em>start</em> hingga <em>finish</em>.</li>
+                                        <li>Menekan risiko insiden melalui manajemen pergerakan massa dan koordinasi lapangan secara <em>real-time</em> antar tim.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PENGALAMAN 3: Customer Service (1 Foto) -->
+                        <div class="timeline-card bento-card p-4 p-md-5">
+                            <div class="timeline-dot"></div>
+                            <div class="row g-4 align-items-center">
+                                <!-- Kolom Kiri: Galeri Foto Responsif -->
+                                <div class="col-lg-5 order-lg-2">
+                                    <div class="exp-gallery-container">
+                                        <div class="exp-photo-grid grid-1">
+                                            <div class="exp-photo-frame" onclick="openLightbox('assets/img/cs.jpg', 'Pengelolaan Administrasi & Pelayanan Member — Extreme Project Fitness Studio')">
+                                                <img src="assets/img/cs.jpg" alt="Customer Service 1" class="img-fluid">
+                                                <div class="exp-photo-hover"><i class="bi bi-arrows-fullscreen"></i></div>
+                                            </div>
+                                        </div>
+                                        <span class="exp-gallery-caption"><i class="bi bi-camera me-1"></i>Dokumentasi Extreme Project Fitness</span>
+                                    </div>
+                                </div>
+                                <!-- Kolom Kanan: Rincian Pengalaman -->
+                                <div class="col-lg-7 order-lg-1">
+                                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-2">
+                                        <div>
+                                            <h5 class="fw-bold mb-0">Customer Service</h5>
+                                            <span class="text-primary fw-semibold small">Extreme Project Fitness Studio</span>
+                                        </div>
+                                        <span class="pill-tag-neutral">Jul &ndash; Sep 2025</span>
+                                    </div>
+                                    <ul class="text-secondary small mb-0 ps-3 mt-3" style="line-height: 1.8;">
+                                        <li>Berhasil menjaga keakuratan administrasi secara konsisten melalui pengelolaan dan rekapitulasi basis data pelanggan menggunakan <strong>Microsoft Excel</strong>.</li>
+                                        <li>Meningkatkan loyalitas dan kepuasan <em>member</em> dengan memberikan rekomendasi layanan yang presisi berdasarkan analisis kebutuhan pelanggan.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION (DENGAN INSTAGRAM & KOTAK PADAT) ================= -->
+    <section id="contact" class="py-5">
+        <div class="container py-4">
+            <div class="bento-card p-4 p-lg-5" data-aos="zoom-in">
+                <div class="row g-5 align-items-center">
+                    
+                    <!-- Kolom Kiri: Info Kontak -->
+                    <div class="col-lg-5">
+                        <span class="section-tag font-mono">// 05. KONTAK</span>
+                        <h2 class="display-6 fw-extrabold mt-2 mb-4">Mari Berdiskusi &amp;<br>Berkolaborasi</h2>
+                        
+                        <div class="d-flex flex-column gap-3">
+                            <a href="mailto:dindanurrahmaliaaz28@gmail.com" class="contact-item p-3 rounded-4 d-flex align-items-center gap-3 text-decoration-none">
+                                <div class="icon-badge bg-primary bg-opacity-10 text-primary"><i class="bi bi-envelope-at fs-5"></i></div>
+                                <div>
+                                    <small class="text-secondary d-block lh-1 mb-1">Email Resmi</small>
+                                    <span class="text-body fw-bold fs-6">dindanurrahmaliaaz28@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="https://wa.me/6285179601554" target="_blank" class="contact-item p-3 rounded-4 d-flex align-items-center gap-3 text-decoration-none">
+                                <div class="icon-badge bg-success bg-opacity-10 text-success"><i class="bi bi-whatsapp fs-5"></i></div>
+                                <div>
+                                    <small class="text-secondary d-block lh-1 mb-1">WhatsApp / Telepon</small>
+                                    <span class="text-body fw-bold fs-6">+62 851-7960-1554</span>
+                                </div>
+                            </a>
+                            <a href="https://linkedin.com/in/dinda-nur-rahmalia" target="_blank" class="contact-item p-3 rounded-4 d-flex align-items-center gap-3 text-decoration-none">
+                                <div class="icon-badge bg-info bg-opacity-10 text-info"><i class="bi bi-linkedin fs-5"></i></div>
+                                <div>
+                                    <small class="text-secondary d-block lh-1 mb-1">Profil LinkedIn</small>
+                                    <span class="text-body fw-bold fs-6">linkedin.com/in/dinda-nur-rahmalia</span>
+                                </div>
+                            </a>
+                            <a href="https://instagram.com/dinrhlia" target="_blank" class="contact-item p-3 rounded-4 d-flex align-items-center gap-3 text-decoration-none">
+                                <!-- Gradient khusus Instagram -->
+                                <div class="icon-badge bg-opacity-10" style="color: #E1306C; background: rgba(225, 48, 108, 0.1);"><i class="bi bi-instagram fs-5"></i></div>
+                                <div>
+                                    <small class="text-secondary d-block lh-1 mb-1">Instagram</small>
+                                    <span class="text-body fw-bold fs-6">@dinrhlia</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Kolom Kanan: Form Pesan -->
+                    <div class="col-lg-7">
+                        <form id="contactForm" class="p-4 p-md-5 rounded-4 inner-form-box">
+                            <h5 class="fw-bold mb-4">Kirim Pesan Langsung</h5>
+                            <div class="mb-4">
+                                <label class="form-label small fw-semibold text-secondary">Nama Anda / Perusahaan</label>
+                                <input type="text" id="senderName" class="form-control form-control-lg fs-6 bg-transparent" placeholder="Contoh: Ibu Sarah — HRD PT Teknologi" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label small fw-semibold text-secondary">Pesan</label>
+                                <textarea id="senderMsg" class="form-control bg-transparent" rows="5" placeholder="Halo Dinda, kami tertarik mengundang Anda untuk sesi interview..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill fw-semibold fs-6 shadow-primary mt-2">
+                                <i class="bi bi-whatsapp me-2"></i> Kirim Pesan via WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="py-4 text-center border-top border-secondary border-opacity-10">
+        <div class="container">
+            <p class="text-secondary small mb-0">
+                &copy; 2026 <strong>Dinda Nur Rahmalia</strong> &bull; S.Kom.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ================= MODAL LIGHTBOX (MENDUKUNG PDF TAJAM & GAMBAR) ================= -->
+    <div class="modal fade" id="imageLightboxModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bento-card border-0 overflow-hidden">
+                <div class="modal-header border-bottom border-secondary border-opacity-10 py-3 d-flex justify-content-between align-items-center">
+                    <h6 class="modal-title fw-bold mb-0" id="lightboxCaption">Pratinjau Dokumen</h6>
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="#" id="lightboxOpenTab" target="_blank" class="btn btn-sm btn-primary rounded-pill px-3">
+                            <i class="bi bi-box-arrow-up-right me-1"></i> Buka Layar Penuh
+                        </a>
+                        <button type="button" class="btn-close ms-2" data-bs-dismiss="modal"></button>
+                    </div>
+                </div>
+                <div class="modal-body p-2 text-center bg-dark bg-opacity-25">
+                    <img src="" id="lightboxImage" class="img-fluid rounded-3 d-none" style="max-height: 82vh;" alt="Preview">
+                    <iframe src="" id="lightboxPdf" class="w-100 rounded-3 border-0 d-none" style="height: 80vh;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= MODAL RINCIAN PAUD AL-HIKMAH ================= -->
+    <div class="modal fade" id="paudModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bento-card border-0">
+                <div class="modal-header border-bottom border-secondary border-opacity-10">
+                    <h5 class="modal-title fw-bold">Rincian Analisis &mdash; PAUD Al-Hikmah</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="text-secondary small d-grid gap-3 mb-0">
+                        <li><strong>Analisis Alur Sistem:</strong> Menganalisis alur pendaftaran dan administrasi sekolah untuk merancang alur sistem digital yang lebih efisien.</li>
+                        <li><strong>Pemodelan Arsitektur &amp; UML:</strong> Menyelesaikan perancangan arsitektur sistem menggunakan diagram <em>UML (Use Case, Activity, Sequence)</em>.</li>
+                        <li><strong>Perancangan Basis Data &amp; Dokumentasi:</strong> Menyusun rancangan <em>Entity Relationship Diagram (ERD)</em> serta laporan dokumen perancangan yang komprehensif dari hasil kolaborasi tim agar pengembangan sistem akurat dengan kebutuhan instansi.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
